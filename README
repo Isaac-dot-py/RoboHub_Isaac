@@ -1,1 +1,16 @@
 RoboHub Camp scheduale
+
+Prior to Day 1:
+
+Create a file called ".env" (environment variable) in the root of your project and add 2 lines
+"
+apikey = 
+YOUTUBE_API_KEY = 
+"
+Obtain your own personal OpenAI API key
+Obtain your own personal youtube API key 
+Use Chat GPT and youtube for help on obtaining these
+After the first = sign add OpenAI API key
+After the second = sign add youtube API key
+
+Go through each code and begin to learn we will talk more in depth about each one in the class.
