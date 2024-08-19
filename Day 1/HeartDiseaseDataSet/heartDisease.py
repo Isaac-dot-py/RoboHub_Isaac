@@ -7,7 +7,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
 
 # Step 1: Load the data
-df = pd.read_csv('heartDisease.csv')
+df = pd.read_csv('../heartDisease.csv')
 
 # Step 2: Prepare the features and target variable
 X = df[['maximum heart rate achieved']]  # Predictor
