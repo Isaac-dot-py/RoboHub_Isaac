@@ -29,14 +29,6 @@ r2 = r2_score(y_test, y_pred)
 print(f"Mean Squared Error: {mse}")
 print(f"R^2 Score: {r2}")
 
-# Step 7: Function to predict the number of major vessels for a given heart rate
-def predict_vessels(heart_rate):
-    return model.predict([[heart_rate]])[0]
-
-# Example prediction
-new_heart_rate = int(input("What is your exercising heart rate: "))
-predicted_vessels = predict_vessels(new_heart_rate)
-print(f"Predicted number of major vessels colored by fluoroscopy for heart rate {new_heart_rate}: {predicted_vessels:.2f}")
 
 # Step 8: Visualize the data and the regression line
 plt.figure(figsize=(10, 6))
@@ -50,7 +42,7 @@ predicted_vessels_range = model.predict(heart_rate_range.reshape(-1, 1))
 plt.plot(heart_rate_range, predicted_vessels_range, color='red', linewidth=2, label='Regression Line')
 
 # Highlight the prediction
-plt.scatter(new_heart_rate, predicted_vessels, color='green', s=100, edgecolor='black', zorder=5, label='Prediction')
+plt.scatter(, , color='green', s=100, edgecolor='black', zorder=5, label='Prediction')
 
 plt.xlabel('Maximum Heart Rate Achieved')
 plt.ylabel('Number of Major Vessels Colored by Fluoroscopy')
